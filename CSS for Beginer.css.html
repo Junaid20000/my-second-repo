@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="icons8-superman-64.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="Style.css" />
+
+    <style>
+      h1 {
+        color: brown;
+        background-color: aqua;
+        height: 40px 40px;
+        width: 50%;
+
+        font-size: 26px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: 100;
+
+        text-align: center;
+
+        border: 2px solid red;
+        border-radius: 15px;
+
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 100px;
+
+        padding: 20px;
+      }
+
+      div {
+        border: 10px;
+        font-size: 30px;
+        background-color: rgb(47, 255, 0);
+        margin-left: 20px;
+        padding: 20px;
+        border-radius: 15px;
+      }
+
+      h3,
+      li {
+        font-size: 20px;
+        text-align: center;
+        background-color: aqua;
+      }
+
+      #jh {
+        color: tomato;
+        background-color: aqua;
+      }
+      .jh,
+      .ohh {
+        color: red;
+        font-size: 25px;
+        background-color: aqua;
+      }
+      #as,
+      #pk {
+        font-size: 30px;
+        background-color: rgb(47, 255, 0);
+        margin-left: 20px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS for Biginer</h1>
+
+    <strong>Style Tag. Font. Height Width</strong>
+    <br />
+    <br />
+    <p>
+      (CSS can be added to HTML documents in 3 ways: Inline - by using the style
+      attribute inside HTML elements Internal - by using a
+      <b> style></b> element in the head section External - by using a
+      <b>link</b> element to link to an external CSS file The most common way to
+      add CSS, is to keep the styles in external CSS files. However, in this
+      tutorial we will use inline and internal styles, because this is easier to
+      demonstrate, and easier for you to try it yourself. )
+    </p>
+    <br />
+    <strong class="jh">Class</strong>
+    <h3>
+      We can apply a class to various elements so that it could be numerous
+      times on a single page. <br />
+      The class is assigned to an element and its name starts with "." followed
+      by the name of the class. <br />We can attach multiple class selectors to
+      an element. <br />
+      If there is maltiple classes then use <b id="jh"> Space _ </b>
+    </h3>
+
+    <b class="jh">ID</b>
+    <h3 class="ohh">
+      <li>
+        The Id is unique in a page, and we can only apply it to one specific
+        element.
+      </li>
+      <li>
+        The name of the Id starts with the "#" symbol followed by a unique id
+        name.
+      </li>
+      <li>We can attach only one ID selector to an element.</li>
+    </h3>
+
+    <h1>Span Tag</h1>
+    <p id="as">
+      The span> tag is an inline container used to mark up a part of a text, or
+      a part of a document. The span> tag is easily styled by CSS or manipulated
+      with JavaScript using the <span>class</span> or id attribute. The span>
+      tag is much like the div> element, but div> is a block-level element and
+      span> is an inline element.
+    </p>
+
+    <h1>
+      DIV Tag
+      <p class="jh">
+        The DIV tag defines a division or a section in an HTML document. The DIV
+        tag is used as a container for HTML elements - which is then styled with
+        CSS or manipulated with JavaScript. The DIV tag is easily styled by
+        using the class or id attribute. Any sort of content can be put inside
+        the DIV tag! Note: By default, browsers always place a line break before
+        and after the DIV element.
+      </p>
+    </h1>
+    <div>
+      <h1>Inline.Block.Inline-Block</h1>
+      <p id="pk">
+        <em style="color: red; font-size: 40px; background-color: aquamarine">
+          Inline</em
+        ><br />
+        Displays an element as an inline element. Any height and width
+        properties will have no effect. The display property specifics the
+        display behavior of an element. It’s a must know for controlling the
+        layout of an element. There’s a bunch of property values. But let’s
+        start off with the essential inline. This one displays the element
+        inline or on the same line. In other words, inline elements do NOT start
+        on a new line and only takes up as much width as its content. So, if you
+        try to set any width and height, it will have NO effects.<br />
+
+        .inline-element {<br />
+        display: inline;<br />
+        width: 1000px; /* ❌ won't have any effect */<br />
+        height: 1000px; /* ❌ won't have any effect */<br />
+        } <br />
+        #inline elements<br />
+        Here are a few elements that have a default inline property: <br />
+
+        span<br />
+        a<br />
+        img<br />
+        And most of the formatting tags are also are inherently inline:<br />
+
+        em<br />
+        strong<br />
+        i<br />
+        small
+      </p>
+
+      <p id="ck">
+        <em style="color: red; font-size: 40px; background-color: aquamarine">
+          Inline-Block</em
+        ><br />
+        Displays an element as an inline-level block container. You CAN set
+        height and width values.<br />
+
+        Alright, let's move on to inline-block. It’s essentially the same thing
+        as inline, except that you can set height and width values.<br />
+
+        .inline-block-element { <br />
+        display: inline-block;<br />
+        width: 1000px; /* ✅ yes, it will work */<br />
+        height: 1000px; /* ✅ yes, it will work */<br />
+        }<br />
+      </p>
+
+      <p>
+        <em style="color: red; font-size: 40px; background-color: aquamarine">
+          Block</em
+        ><br />
+        <br />
+        So far, we talked about inline. Now let's switched to the opposite of
+        it, block. Remember inline elements appears on the same line. Well,
+        block starts on a NEW line and takes up the full width available. So
+        that means block elements will occupy the entire width of its parent
+        element. #block elements<br />
+        Here are a few elements that have a default block property:<br />
+        <br />
+        div<br />
+        h1<br />
+        p<br />
+        li<br />
+        section<br />
+        <br />
+        <em style="color: red; font-size: 40px; background-color: aquamarine">
+          #Explained in non-dev terms</em
+        ><br />
+        Imagine if you're attending a concert, you have rows of seats, right. If
+        you assign your friend with an inline seat, they will sit next to you.
+        So the thing with inline seats, it's that they all are the same physical
+        chair.You can't manipulate the chair to make it larger or smaller. One
+        size fits all they call it!<br />
+        <br />
+        Now your friend Jennifer wants to join you, but because she is the
+        daughter of the owner of the stadium. She gets assigned an inline-block
+        seat. Well, she still gets to sit next to you. Cause she's "inline" with
+        you (bad pun, lol 😂) and of course you want her to sit next to you.
+        However, because she is the daughter of the stadium, her mom wants to
+        make sure she's comfortable. So she gives her a special seat, where her
+        chair is customized and can be adjusted to make it bigger or smaller.
+        Nepotism at its finest 🤫<br />
+        <br />
+        Your classmate Angelina is also attending the concert. Now your friend
+        Jennifer doesn't really like her. So she tells her mom to assign her a
+        block seat. That way Angelina is not seated next to you. Instead she
+        sits in the next row.<br />
+        <br />
+        #Final Solution<br />
+        inline The element doesn’t start on a new line and only occupy just the
+        width it requires. You can’t set the width or height.<br />
+        <br />
+        inline-block It’s formatted just like the inline element, where it
+        doesn’t start on a new line. BUT, you can set width and height
+        values.<br />
+        <br />
+        block The element will start on a new line and occupy the full width
+        available. And you can set width and height values.
+      </p>
+    </div>
+
+    <h1>Link css file to html file via (link:CSS ) in head section</h1>
+  </body>
+</html>
